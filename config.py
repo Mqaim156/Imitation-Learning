@@ -14,8 +14,9 @@ os.makedirs(MODELS_DIR, exist_ok=True)
 
 ENV_NAME = "PickPlace"
 ROBOT = "Panda"
-HORIZON = 200          # Max steps per episode
+HORIZON = 2000          # Max steps per episode
 CONTROL_FREQ = 20      # Control frequency in Hz
+SINGLE_OBJECT_MODE = 1
 
 # DEMO SETTINGS
 
@@ -26,7 +27,7 @@ TEST_SEEDS = list(range(1000, 1050))  # Seeds 1000-1049 for testing generalizati
 # DR SETTINGS
 
 DR_CONFIG = {
-    "randomize_color": True,       # Randomize object/robot colors
+    "randomize_color": False,   # Randomize object/robot colors
     "randomize_camera": True,      # Randomize camera position/angle
     "randomize_lighting": True,    # Randomize light intensity/direction
     "randomize_dynamics": True,    # Randomize friction, mass, damping
