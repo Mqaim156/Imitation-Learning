@@ -57,7 +57,6 @@ def make_env(
     
     # Create base environment
     env = suite.make(**env_config)
-    env.visualize(vis_settings={"grippers": True, "robots": True})
     
     # Wrap with domain randomization if requested
     if domain_randomization:

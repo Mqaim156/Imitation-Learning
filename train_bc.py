@@ -1,6 +1,4 @@
 """
-train_bc.py
------------
 Train a Behavioral Cloning policy on collected demonstrations.
 
 Usage:
@@ -10,6 +8,7 @@ Usage:
 
 import argparse
 import os
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 import torch
 import torch.nn as nn
 import torch.optim as optim

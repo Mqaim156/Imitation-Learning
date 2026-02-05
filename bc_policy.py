@@ -1,18 +1,5 @@
-"""
-bc_policy.py
-------------
-Behavioral Cloning policy network.
-
-This is a simple MLP (Multi-Layer Perceptron) that takes observations
-as input and outputs actions.
-
-Architecture:
-    observation → [hidden layers] → action
-    
-The network learns to minimize the difference between its predicted
-actions and the human's demonstrated actions.
-"""
-
+import os
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 import torch
 import torch.nn as nn
 import numpy as np
